@@ -1,0 +1,225 @@
+.request-quotation-top{
+    background: #4c110f;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.request-quotation-top h2{
+    color: white;
+    font-size: 25px;
+}
+
+.request-quotation-top span{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+
+.quotation-message-send-form .flex-input{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .quotation-message-send-form .flex-input div{
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+
+  .quotation-message-send-form label{
+    color: #641513;
+    margin: 10px;
+    font-style: italic;
+  }
+  
+  .quotation-message-send-form input{
+    background: #fff;
+    border: 2px solid #58141240;
+    color: #581412;
+    padding: 10px 15px;
+    border-radius: 2px;
+    display: block;
+    margin: 10px;
+    outline: none;
+    width: 100%;
+    transition: .2s;
+  }
+  
+  .quotation-message-send-form input:focus{
+    border: 2px solid #c5c5c5;
+    background: ghostwhite;
+  }
+  
+  .quotation-message-send-form textarea{
+    overflow: auto;
+    height: 200px;
+    resize: none;
+    padding: 10px 15px;
+    background: #fff;
+    border: 2px solid #58141240;
+    color: #581412;
+    border-radius: 2px;
+    display: block;
+    margin: 10px;
+    outline: none;
+    width: 100%;
+    transition: .3s;
+    font-size: 14px;
+  }
+  
+  .quotation-message-send-form textarea:focus{
+    border: 2px solid #0464a0;
+    background: ghostwhite;
+  }
+  
+  .quotation-message-send-form textarea::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .quotation-message-send-form .single-input{
+    padding-right: 20px;
+  }
+  
+  .quotation-message-send-form button{
+    width: 150px;
+    background: #581412;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    margin: 25px 10px;
+    transition: 0.3s;
+    border-radius: 3px;
+  }
+  
+  .quotation-message-send-form button:hover{
+    background: #0464a0;
+    color: white;
+  }
+  
+
+  .request-quotation-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 5px;
+  }
+
+
+  .request-quotation-main img{
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+    transform: scale(0.9);
+    opacity: 0.85;
+    border-radius: 5px;
+  }
+
+  .request-quotation-main img:hover{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+
+  .quotation-form-container{
+    flex-grow: 1;
+  }
+
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+    .request-quotation-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .quotation-message-send-form .flex-input {
+      flex-direction: column;
+    }
+  
+    .quotation-message-send-form .flex-input div {
+      margin-right: 0;
+    }
+  
+    .quotation-message-send-form .single-input {
+      padding-right: 0;
+    }
+  
+    .request-quotation-main {
+      flex-direction: column;
+    }
+
+    .quotation-form-container{
+        width: 90%;
+    }
+
+    .flex-input div{
+        width: 100%;
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+    .request-quotation-top h2 {
+      font-size: 22px;
+    }
+  
+    .request-quotation-top span {
+      font-size: 24px;
+    }
+  
+    .quotation-message-send-form label {
+      margin: 5px;
+    }
+  
+    .quotation-message-send-form input,
+    .quotation-message-send-form textarea {
+      font-size: 16px;
+      padding: 8px 12px;
+      margin: 5px;
+    }
+  
+    .quotation-message-send-form button {
+      width: 120px;
+      margin: 20px 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .request-quotation-top {
+      padding: 20px 10px;
+    }
+  
+    .request-quotation-top h2 {
+      font-size: 20px;
+    }
+  
+    .request-quotation-top span {
+      font-size: 20px;
+    }
+  
+    .quotation-message-send-form label {
+      font-size: 14px;
+    }
+  
+    .quotation-message-send-form input,
+    .quotation-message-send-form textarea {
+      font-size: 14px;
+      padding: 6px 10px;
+      margin: 5px;
+    }
+  
+    .quotation-message-send-form button {
+      width: 100px;
+      padding: 8px;
+    }
+  
+    .request-quotation-main img {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  

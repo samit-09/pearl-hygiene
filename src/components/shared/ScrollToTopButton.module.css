@@ -1,0 +1,15 @@
+.btn{
+  border-radius: 50px;
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  background: "#581412";
+  width: "40px";
+  right: 15;
+  bottom: 15;
+  border-radius: 3;
+}
+
+.scrollToTopButton:hover {
+    background: red;
+  }

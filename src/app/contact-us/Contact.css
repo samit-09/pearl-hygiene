@@ -1,0 +1,151 @@
+.contact-span{
+    background: #581412;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact-text-container{
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;
+}
+
+.contact-title{
+    color: #581412;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    
+  background: radial-gradient(
+    circle at 100%,
+    #5039ff,
+    #581412 50%,
+    #9cafff 75%,
+    #992a26 75%
+  );
+  font-weight: 600;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 3s linear infinite;
+}
+
+@keyframes animatedTextGradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+.contact-us-icons{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s;
+    color: #581412;
+}
+
+.contact-info-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.contact-info-item a:hover{
+    color: #0464a0;
+    text-decoration: underline;
+}
+
+.contact-info-item:hover .contact-us-icons{
+    color: #0464a0;
+}
+
+.message-send-form .flex-input{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-send-form input{
+  background: #fff;
+  border: 2px solid #581412;
+  color: #581412;
+  padding: 10px 15px;
+  border-radius: 2px;
+  display: block;
+  margin: 10px;
+  outline: none;
+  width: 100%;
+  transition: .2s;
+}
+
+.message-send-form input:focus{
+  border: 2px solid #c5c5c5;
+  background: ghostwhite;
+}
+
+.message-send-form textarea{
+  overflow: auto;
+  height: 200px;
+  resize: none;
+  padding: 10px 15px;
+  background: #fff;
+  border: 2px solid #581412;
+  color: #581412;
+  border-radius: 2px;
+  display: block;
+  margin: 10px;
+  outline: none;
+  width: 100%;
+  transition: .3s;
+  font-size: 14px;
+}
+
+.message-send-form textarea:focus{
+  border: 2px solid #0464a0;
+  background: ghostwhite;
+}
+
+.message-send-form textarea::-webkit-scrollbar{
+  display: none;
+}
+
+.message-send-form .single-input{
+  padding-right: 20px;
+}
+
+.message-send-form button{
+  width: 150px;
+  background: #581412;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+.message-send-form button:hover{
+  background: #0464a0;
+  color: white;
+}
+
+
+
+.contact-pearl-logo{
+  opacity: 0.15;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-image: url("../../assets/logo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+    background-color: #ececec00;
+}

@@ -1,0 +1,374 @@
+.product-details-top{
+    background: #4c110f;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-details-top h2{
+    color: white;
+    font-size: 25px;
+}
+
+.product-details-text h2{
+    font-size: 36px;
+    color: #60120f;
+    margin-bottom: 30px;
+}
+
+.product-details-text h3{
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.product-details-text h3 span{
+    color: #0461a0;
+}
+
+.product-details-text p{
+    font-size: 20px;
+    margin: 10px 0;
+    width: 700px;
+}
+
+.product-details-text p a{
+    color: #60120f;
+}
+
+.product-details-text p span{
+    color: #0461a0;
+}
+
+.product-details-main{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.product-image-container{
+    width: 850px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.product-details-btns{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#requestBtn{
+  width: 240px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #60120f;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(85, 0, 0, 0.216);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  margin: 30px 0;
+}
+
+#requestBtn::before{
+    width: 240px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+}
+
+#requestBtn:hover::before{
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+  }
+  
+  #requestBtn:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  }
+
+#requestBtn:hover{
+    background: transparent;
+}
+
+#shareBtn{
+    background: rgb(245, 245, 245);
+    padding: 10px 15px;
+    color: #60120f;
+    border-radius: 50%;
+    transition: .2s;
+    box-shadow: 5px 5px 10px 5px rgba(147, 147, 147, 0.184);
+}
+
+#shareBtn:hover{
+    background: #60120f;
+    color: white;
+}
+
+#product-description{
+    padding: 20px;
+    margin: 40px;
+}
+
+#product-description h2{
+    color: #4c110f;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#product-description p{
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#product-specifications{
+    padding: 20px;
+    margin: 40px;
+}
+
+#product-specifications h2{
+    color: #4c110f;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .spec-table th, .spec-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .spec-table th {
+    background-color: #fff;
+  }
+  
+  .spec-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .spec-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255); /* Optional: semi-transparent background */
+    z-index: 9999; /* Ensure it's on top of everything */
+  }
+
+  
+.lds-facebook,
+.lds-facebook div {
+  box-sizing: border-box;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #60120f;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0s;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+  .product-details-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-details-text p {
+    width: 100%;
+  }
+
+  .product-details-main {
+    flex-direction: column;
+  }
+
+  .product-image-container {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  #requestBtn {
+    width: 200px;
+    height: 50px;
+  }
+
+  #requestBtn::before{
+    width: 200px;
+    height: 130px;
+}
+
+  #product-description, #product-specifications {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .spec-table th, .spec-table td {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .product-details-btns{
+    justify-content: center;
+  }
+
+  .product-details-text h2 {
+    font-size: 28px;
+  }
+
+  .product-details-text h3 {
+    font-size: 20px;
+  }
+
+  .product-details-text p {
+    font-size: 16px;
+  }
+
+  #requestBtn {
+    width: 180px;
+    height: 50px;
+  }
+
+  
+  #requestBtn::before{
+    width: 180px;
+    height: 130px;
+}
+
+  #product-description h2, #product-specifications h2 {
+    font-size: 25px;
+  }
+
+  .spec-table {
+    font-size: 16px;
+  }
+
+  .spec-table th, .spec-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-details-top {
+    padding: 20px 10px;
+  }
+
+  .product-details-text h2 {
+    font-size: 24px;
+  }
+
+  .product-details-text h3 {
+    font-size: 18px;
+  }
+
+  .product-details-text p {
+    font-size: 14px;
+  }
+
+  #requestBtn {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  
+  #requestBtn::before{
+    width: 150px;
+    height: 100px;
+}
+
+  #shareBtn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  #product-description h2, #product-specifications h2 {
+    font-size: 20px;
+  }
+
+  #product-description p, #product-specifications p {
+    font-size: 16px;
+  }
+
+  .spec-table {
+    font-size: 14px;
+  }
+
+  .spec-table th, .spec-table td {
+    padding: 6px;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+}
